@@ -1,0 +1,177 @@
+
+.wrapper-mainCheckbag{
+display: flex;
+align-items: center;
+justify-content: center;
+
+    }
+/* control the whole layout big box */
+.mainBox-checkout{
+width: 50%;
+padding-right: 20px;
+
+}
+
+
+.mainBox-checkout h3{
+text-align: center;
+margin: 20px 0px;
+
+    }
+    
+/* - each small box */
+.smallleftBox-showOrder{
+width: 100%;
+background-color: antiquewhite;
+display: flex;
+padding-right: 20px;
+
+}
+/* control size of each small box
+ based on img size--only height */
+.controlImageCheckout{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+} 
+
+
+.textRight-checkout{
+width: 50%;
+padding-left: 100px;
+padding-top: 40px;
+
+}
+.totalPrice{
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+width: 20%;
+padding-right: 20px;
+}
+
+/* check out box */
+
+.smallrightBox-orderSummary{
+    width: 30%;
+padding: 30px; 
+background-color: #E5E7E9 ;
+
+}
+.control2box-subtotalAndNumber{
+width: 100%;
+display: flex;
+margin: 20px 0px;
+}
+.subtotal-text{
+    width: 50%;
+}
+.subtotal-number{
+    width: 50%;
+   text-align: end;
+    
+}
+.button-checkout{
+   width: 90%;
+   display: block;
+   margin: auto;
+   padding: 5px 0px;
+   background-color:#515A5A ;
+   border-radius: 10px;
+   border: none;
+   color: white;
+   font-weight: bold;
+
+}
+.controlUL{
+    list-style: none;
+}
+.controlRemoveButtonCart{
+    margin-top: 20px;
+    padding: 5px 28px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+
+}
+.controlDropdown{
+  background-color:black;
+  border: none;
+}
+.quantity-dropdown{
+    margin-top: 30px;
+}
+.smallrightBox-showOrder{
+text-align: right;
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 20px;
+} 
+ /*ipad*/
+ @media screen and (max-width: 992px) {
+    .mainBox-checkout{
+        width: 80%;
+     
+        }
+        .controlImageCheckout{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        } 
+        
+ }
+ 
+ /*ipad-mini*/
+ @media screen and (max-width: 768px) {
+ }
+ 
+ /*phone*/
+ @media screen and (max-width: 600px) {
+  /* control the whole layout big box */
+.mainBox-checkout{
+    width: 100%;
+    padding-right: 20px;
+
+    }
+    /* - each small box */
+.smallleftBox-showOrder{
+    width: 100%;
+    padding-right: 0px;
+    flex-direction: column;
+    padding-bottom: 20px;
+    }
+    .control2SmallBox{
+      
+        width: 100%;
+    }
+    .controlUL{
+        width: 100%;
+
+    }
+    .controlImageCheckout{
+        width: 100%;
+        height: 300px;
+    }
+    .quantity-dropdown{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textRight-checkout{
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .controlRemoveButtonCart{
+        margin-top: 0px;
+    margin-left: 10px;
+
+    
+    }
+  
+  
+ }
+
+

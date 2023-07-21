@@ -1,0 +1,193 @@
+.bigBox-header {
+  display: flex;
+}
+
+.logo {
+  width: 33%;
+}
+
+.searchBox-BigBox {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+/* logInControl login contact mybag */
+.logIn {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logIn h5{
+  font-size: 15px; 
+  margin: 0px 20px;
+}
+.logIn h5:hover{
+  color: violet;
+}
+
+.logIn h5 a{
+  margin-right: 10px;
+  color: black;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  padding: 8px 10px;
+
+  
+}
+
+.targetMybag{
+  margin-top: 16px;
+   
+  }
+  .targetMybag h5{
+    font-size: 16px;
+  }
+
+.targetSearchBox {
+  width: 70%;
+  padding: 8px 10px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+
+  /* border: none;
+    border-bottom: 2px solid black; */
+    
+}
+.targetSearchBox:focus {
+border: none;
+outline: none;
+border: 5px solid transparent;
+border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+border-image-slice: 1;
+
+}
+
+.controlSearchIcon {
+  margin-left: -60px;
+  margin-top: -5px;
+  font-size: 20px;
+  color: black;
+}
+
+/* pop up loig in page */
+
+.targetBackground{
+  background-image:url("../../assets/images/raibow2.jpg") ;
+background-size: cover;
+
+
+}
+
+.contactUs{
+cursor: pointer;
+}
+
+.contactUs:hover{
+color: violet;
+}
+
+.aTagMybag{
+  text-decoration: none;
+  color: black;
+}
+
+.aTagMybag:hover{
+  color: violet;
+}
+
+.targetBackground button{
+font-weight: bold;
+
+}
+.targetBackground label{
+  font-weight: bold;
+}
+.singin-button{
+  padding: 7px 50px!important;
+display: block!important;
+margin: auto!important;
+  
+}
+
+ /*ipad*/
+ @media screen and (max-width: 992px) {
+  .logo {
+    width: 20%;
+    padding-left: 20px;
+   
+  }
+  
+  .searchBox-BigBox {
+    width: 30%;
+    justify-content: flex-start;
+    padding-left: 50px;
+  
+  }
+  .targetSearchBox{
+    width: 90%;
+  }
+  
+  .logIn {
+    width:50%;
+  
+  }
+
+   
+ }
+ 
+ /*ipad-mini*/
+ @media screen and (max-width: 768px) {
+ }
+ 
+ /*phone*/
+ @media screen and (max-width: 600px) {
+  .bigBox-header {
+  flex-direction: column;
+  }
+  .logo {
+    width: 100%;
+    padding-left: 0px;
+   
+  }
+  .logo img{
+    display: block;
+    margin: auto;
+  }
+  
+  .searchBox-BigBox {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 50px;
+  
+  
+  }
+  .targetSearchBox{
+    width: 80%;
+    margin-bottom: 10px;
+  
+  }
+  
+  .logIn {
+    width:100%;
+    margin: 20px 0px;
+ display: flex;
+ flex-direction: column;
+align-items: flex-start;
+
+  }
+  .contactUs{
+    margin-top: 25px;
+    
+    }
+  .targetMybag{
+  
+ 
+  }
+
+ }
+

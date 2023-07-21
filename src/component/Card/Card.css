@@ -1,0 +1,145 @@
+.wrapper{
+display: flex;
+justify-content: center;
+height: auto;
+margin: auto;
+flex-wrap: wrap;
+margin-bottom: 50px;
+
+}
+/*Maincard control individual card*/
+.MainCard{
+/* display: flex; */
+width: 20%;
+margin: 30px 30px;
+display: flex;
+/* grid-template-columns: repeat(4,1fr); */
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; ;
+
+}
+.smallBox-card{
+    position: relative;
+  width: 100%;
+
+}
+
+/* parent */
+.imageBox{
+    width: 100%;
+    height: 300px;
+}
+.imageBox img{
+width: 100%;
+object-fit: cover;
+object-position: center;
+height: 100%;
+}
+
+
+/* child */
+.targetSale{
+  padding:5px 15px ;
+    background-color: black;
+    color: white;
+ position: absolute;
+ top: 0;
+ right: 0;
+
+}
+
+
+.targetHover{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* trasfoem traslate make box perfect center */
+    background-color: aqua;
+    font-size: 17px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    width: 70%;
+    text-align: center;
+}
+
+.smallBox-card:hover .imageBox img{
+    opacity: 0.5;
+ 
+}
+
+.card-text{
+    text-align: center;
+    padding-top: 20px;
+
+  
+}
+
+.card-text h3{
+font-size: 20px; 
+}
+.card-text span{
+margin-left: 10px;
+color: red;
+
+}
+
+.starAndReview{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+   
+}
+
+.starAndReview p{
+    margin: 0px 0px 0px 7px;
+}
+.buttonAddBag{
+margin-bottom: 20px;
+
+}
+
+.buttonAddBag button{
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+/*show message add to bag*/
+.showMessageAddtoCart{
+    font-size: 17px;
+    color: green;
+    text-align: center;
+}
+
+ /*ipad*/
+ @media screen and (max-width: 992px) {
+  /*Maincard control individual card*/
+.MainCard{
+    width: 40%;
+    }
+    .card-text h3{
+        margin-left: 0px;
+    }
+
+ }
+ 
+ /*ipad-mini*/
+ @media screen and (max-width: 768px) {
+ }
+ 
+ /*phone*/
+ @media screen and (max-width: 600px) {
+    .MainCard{
+        width: 80%;
+        }
+        .imageBox{
+            height: 350px;
+        }
+ }
+
