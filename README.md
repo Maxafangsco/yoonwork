@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-Test jenkins
+Test jenkins2
 
 ### `npm start`
 
